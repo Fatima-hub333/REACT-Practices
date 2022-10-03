@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const navbar = (
   <nav>
     <h1>Fatima Zahir</h1>
