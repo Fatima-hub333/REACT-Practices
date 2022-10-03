@@ -1,7 +1,6 @@
 import './App.css';
 
 function App() {
-const navbar = (
     <nav>
         <h1>Bob's Bistro</h1>
         <ul>
@@ -10,7 +9,6 @@ const navbar = (
             <li>Contact</li>
         </ul>
     </nav>
-)
 
 }
 
