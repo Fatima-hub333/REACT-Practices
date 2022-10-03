@@ -1,15 +1,9 @@
-import './App.css';
+import React from 'react'
 
-function App() {
-    <nav>
-        <h1>Bob's Bistro</h1>
-        <ul>
-            <li>Menu</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-
+export default class App extends React.Component {
+  render() {
+    return (
+      <h1>{this.props.type} Component</h1>
+    )
+  }
 }
-
-export default App;

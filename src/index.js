@@ -1,27 +1,45 @@
-/* eslint-disable jsx-a11y/alt-text */
+import { render } from "@testing-library/react"
 import React from "react"
 import ReactDOM from "react-dom"
 
-function MyPage() {
-  return (
-    <div>
-      <header>
-        <nav>
-          <img src="./react-logo.png" width="40px" />
-        </nav>
-      </header>
-      <h1>Reasons I'm excited to learn React</h1>
-      <ol>
-        <li>It's a popular library, so I'll be 
-        able to fit in with the cool kids!</li>
-        <li>I'm more likely to get a job as a developer
-        if I know React</li>
-      </ol>
-      <footer>
-        <small>© 2022 last name here development. All rights reserved.</small>
-      </footer>
-    </div>
-  )
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Header username="Fatima Zahir"/>
+        <Greeting />
+      </div>
+    )
+  }
 }
 
-ReactDOM.render(<MyPage />, document.getElementById("root"))
+class Header extends React.Component {
+  render() {
+    return (
+      <header>
+        <p>Welcome, {this.props.username}!</p>
+      </header>
+    )
+  }
+}
+
+class Greeting extends React.Component {
+  render() {
+    const date = new Date()
+    const hours = date.getHours()
+    let timeOfDay
+    
+    if (hours < 12) {
+        timeOfDay = "morning"
+    } else if (hours >= 12 && hours < 17) {
+        timeOfDay = "afternoon"
+    } else {
+        timeOfDay = "night"
+    }
+    return (
+        <h1>Good {timeOfDay} to you, sir or madam!</h1>
+    )
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById("root"))
