@@ -1,4 +1,10 @@
-
 * {
   box-sizing: border-box;
 }
+
+.border {
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+
