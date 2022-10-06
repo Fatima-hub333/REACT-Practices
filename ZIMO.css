@@ -1,12 +1,19 @@
 body {
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-weight: 100;
+  background-image: url('./images/HoldingBg.png');
+  background-size: cover;
   background-color: black;
   color: white;
 }
 
 h1 {
   text-align: center;
+  text-transform: uppercase;
+  margin-top: 235px;
+  letter-spacing: 0.17em;
+  font-size: 37px;
+  font-weight: lighter;
 }
 
 img {
@@ -14,14 +21,19 @@ img {
   max-width: 100%;
 }
 .container {
-  margin-top: 15em;
+  margin-top: 193px;
   margin-left: 400px;
   display: flex;
-  gap: 80px;
+  gap: 125px;
 }
 
 .sub-container {
   margin-top: 100px;
   display: block;
   margin-left: 600px;
+}
+
+.footer {
+  margin-top: 100px;
+  margin-left: 580px;
 }
