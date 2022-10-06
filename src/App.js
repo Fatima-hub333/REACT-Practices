@@ -1,20 +1,13 @@
 import React from "react"
-import CTA from './CTA'
 
 function App() {
   return (
     <div>
-      <CTA>
-        <h1>This is an important CTA</h1>
-        <button>Click me now or you'll miss out!</button>
-      </CTA>
-
-      <CTA>
-        <form>
-          <input type="email" placeholder="Enter email address here"/>
-          <button></button>
-        </form>
-      </CTA>
+      <h1>How Fast do you type?</h1>
+      <textarea />
+      <h4>Time Remaining: ???</h4>
+      <button>Start</button>
+      <h1>Word Count: ???</h1>
     </div>
   )
 }
